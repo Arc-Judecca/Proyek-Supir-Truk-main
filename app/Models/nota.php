@@ -9,6 +9,11 @@ use Illuminate\Database\Eloquent\Model;
 class nota extends Model
 {
     use HasFactory;
-    protected $fillable = ['nota_path','tanggal'];
+    protected $fillable = ['supir_id', 'tanggal', 'nota', 'nota_path'];
+
+    public function supir()
+    {
+        return $this->belongsTo(Supir::class);
+    }
 
 }

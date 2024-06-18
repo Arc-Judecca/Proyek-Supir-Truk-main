@@ -11,7 +11,7 @@
                     <div class="card-header">Book Nota</div>
 
                     <div class="card-body">
-                        <form method="POST" action="{{ route('upload.nota') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('store.nota') }}" enctype="multipart/form-data">
                             @csrf
 
                             <div class="form-group row">
